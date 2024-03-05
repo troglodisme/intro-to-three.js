@@ -71,3 +71,4 @@ function toggleCameraMovement() {
 
 // Add an this functionality to out html button
 document.getElementById('animateCamera').addEventListener('click', toggleCameraMovement);
+
