@@ -2,26 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>three-js-test</title>
-    <style>
-        body { margin: 0; }
-        #exportButton {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 10; 
-            width: 200px;
-            height: 50px;
-            border-radius: 20px;
-            border: none;
-            background-color: orange;
-        }
-    </style>
-</head>
-<body>
-    <button id="exportButton" style="z-index: 100; position: absolute; top: 20px; left: 20px;">Export Scene</button>
-    <script type="module" src="/main.js"></script>
+    <title>introduction to three.js</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Asynchronously loads ES module shims to add support for import maps in browsers that don't natively support them -->
     <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    
+    <!-- Defines import maps to simplify importing Three.js modules and its examples/addons -->
+    <!-- For more info https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap -->
     <script type="importmap">
     {
         "imports": {
@@ -30,5 +18,14 @@
         }
     }
     </script>
+
+</head>
+<body>
+    <!-- <button id="exportButton">Export Scene</button> -->
+    <!-- <button id="animateCamera">Move Camera</button> -->
+
+    <script type="module" src="/1-cube.js"></script>
 </body>
 </html>
+
+
