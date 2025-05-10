@@ -30,9 +30,9 @@ function animate() {
 
 animate();
 
-//add light
-// const ambientLight = new THREE.AmbientLight(0xffffff, 1); // soft white light
-// scene.add(ambientLight);
+// add light
+const ambientLight = new THREE.AmbientLight(0xffffff, 1); // soft white light
+scene.add(ambientLight);
 
 // const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
 // directionalLight.position.set(0, 1, 1); // Position it to shine from above
